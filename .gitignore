@@ -1,0 +1,8 @@
+/*.bat
+*.code-workspace
+*.exe
+*.exp
+*.lib
+*hw2
+*/.vscode/*
+*.csv

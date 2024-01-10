@@ -1,0 +1,25 @@
+==17044== NVPROF is profiling process 17044, command: ./hw6
+Write to output file...complete
+==17044== Profiling application: ./hw6
+==17044== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   50.61%  13.040ms        20  651.99us  87.006us  2.5824ms  bitonicArgSortTailingJ(float*, int*, int, int, int)
+                   33.01%  8.5069ms        55  154.67us  81.981us  328.02us  bitonicCompareSwap(float*, int*, int, int, int)
+                    9.61%  2.4761ms         3  825.36us  821.03us  830.53us  [CUDA memcpy HtoD]
+                    5.64%  1.4539ms         2  726.94us  416.47us  1.0374ms  [CUDA memcpy DtoH]
+                    0.90%  231.29us         1  231.29us  231.29us  231.29us  disseminationScanBlock(float*, float*, int)
+                    0.21%  53.598us         1  53.598us  53.598us  53.598us  disseminationScanApplyPostfixes(float*, float*, int)
+                    0.02%  5.7270us         1  5.7270us  5.7270us  5.7270us  disseminationScanPostfixes(float*, int)
+      API calls:   78.44%  102.69ms         4  25.673ms  116.21us  102.24ms  cudaMalloc
+                   20.22%  26.468ms         5  5.2935ms  625.42us  22.796ms  cudaMemcpy
+                    0.63%  825.51us         4  206.38us  116.70us  374.62us  cudaFree
+                    0.29%  374.86us        78  4.8050us  3.2510us  49.132us  cudaLaunchKernel
+                    0.21%  279.48us       228  1.2250us     133ns  62.893us  cuDeviceGetAttribute
+                    0.19%  242.58us         1  242.58us  242.58us  242.58us  cuLibraryLoadData
+                    0.01%  16.496us         2  8.2480us  4.0490us  12.447us  cuDeviceGetName
+                    0.01%  13.856us         2  6.9280us  3.0100us  10.846us  cuDeviceGetPCIBusId
+                    0.00%  4.0210us         3  1.3400us     204ns  2.9130us  cuDeviceGetCount
+                    0.00%  1.0890us         4     272ns     132ns     673ns  cuDeviceGet
+                    0.00%     694ns         2     347ns     274ns     420ns  cuDeviceTotalMem
+                    0.00%     406ns         2     203ns     171ns     235ns  cuDeviceGetUuid
+                    0.00%     299ns         1     299ns     299ns     299ns  cuModuleGetLoadingMode

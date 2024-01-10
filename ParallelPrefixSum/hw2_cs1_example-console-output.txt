@@ -1,0 +1,36 @@
+[jtalbott@cs1 parallel]$ echo "With 2^26 data elements:"
+With 2^26 data elements:
+[jtalbott@cs1 parallel]$ make hw2
+g++ -std=c++11 -Wall -Werror -pedantic -ggdb -pthread -O2 hw2.cpp -o hw2
+[jtalbott@cs1 parallel]$ ./hw2
+in 223.809ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 170.609ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 215.211ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 170.374ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 169.196ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 170.863ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 219.414ms
+[jtalbott@cs1 parallel]$ echo "With 100 million data elements:"
+With 100 million data elements:
+[jtalbott@cs1 parallel]$ make hw2
+g++ -std=c++11 -Wall -Werror -pedantic -ggdb -pthread -O2 hw2.cpp -o hw2
+[jtalbott@cs1 parallel]$ ./hw2
+in 307.229ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 306.9ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 408.134ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 353.351ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 309.709ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 309.154ms
+[jtalbott@cs1 parallel]$ ./hw2
+in 350.673ms
